@@ -11,13 +11,13 @@ public class HashMapExample1 {
 		// TODO Auto-generated method stub
 		Map<String, Integer> map = new HashMap<String, Integer>();
 		
-		map.put("½Å¿ë±Ç", 85);
-		map.put("È«±æµ¿", 90);
-		map.put("µ¿Àå±º", 80);
-		map.put("È«±æµ¿", 95);
-		System.out.println("ÃÑ Entry ¼ö: " + map.size());
+		map.put("ï¿½Å¿ï¿½ï¿½", 85);
+		map.put("È«ï¿½æµ¿", 90);
+		map.put("ï¿½ï¿½ï¿½å±º", 80);
+		map.put("È«ï¿½æµ¿", 95);
+		System.out.println("ï¿½ï¿½ Entry ï¿½ï¿½: " + map.size());
 		
-		System.out.println("\tÈ«±æµ¿ : " + map.get("È«±æµ¿"));
+		System.out.println("\tÈ«ï¿½æµ¿ : " + map.get("È«ï¿½æµ¿"));
 		System.out.println();
 		
 		Set<String> keySet = map.keySet();

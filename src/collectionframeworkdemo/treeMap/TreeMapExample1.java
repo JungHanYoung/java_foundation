@@ -7,36 +7,36 @@ public class TreeMapExample1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		TreeMap<Integer, String> scores = new TreeMap<Integer, String>();
-		scores.put(new Integer(87), "È«±æµ¿");
-		scores.put(new Integer(98), "ÀÌµ¿¼ö");
-		scores.put(new Integer(75), "¹Ú±æ¼ø");
-		scores.put(new Integer(95), "½Å¿ë±Ç");
-		scores.put(new Integer(80), "±èÀÚ¹Ù");
+		TreeMap<Integer, String> scores = new TreeMap<>();
+		scores.put(87, "???");
+		scores.put(98, "?????");
+		scores.put(75, "????");
+		scores.put(95, "????");
+		scores.put(80, "?????");
 		
-		Map.Entry<Integer, String> entry = null;
+		Map.Entry<Integer, String> entry;
 		
 		entry = scores.firstEntry();
-		System.out.println("°¡Àå ³·Àº Á¡¼ö: " + entry.getKey() + "-" + entry.getValue());
+		System.out.println("???? ???? ????: " + entry.getKey() + "-" + entry.getValue());
 		
 		entry = scores.lastEntry();
-		System.out.println("°¡Àå ³ôÀº Á¡¼ö: " + entry.getKey() + "-" + entry.getValue());
+		System.out.println("???? ???? ????: " + entry.getKey() + "-" + entry.getValue());
 		
-		entry = scores.lowerEntry(new Integer(95));
-		System.out.println("95Á¡ ¾Æ·¡ Á¡¼ö: " + entry.getKey() + "-" + entry.getValue());
+		entry = scores.lowerEntry(95);
+		System.out.println("95?? ??? ????: " + entry.getKey() + "-" + entry.getValue());
 		
-		entry = scores.higherEntry(new Integer(95));
-		System.out.println("95Á¡ À§ÀÇ Á¡¼ö: " + entry.getKey() + "-" + entry.getValue());
+		entry = scores.higherEntry(95);
+		System.out.println("95?? ???? ????: " + entry.getKey() + "-" + entry.getValue());
 		
-		entry = scores.floorEntry(new Integer(95));
-		System.out.println("95Á¡ÀÌ°Å³ª ¹Ù·Î ¾Æ·¡ Á¡¼ö: " + entry.getKey() + "-" + entry.getValue());
+		entry = scores.floorEntry(95);
+		System.out.println("95?????? ??? ??? ????: " + entry.getKey() + "-" + entry.getValue());
 		
-		entry = scores.ceilingEntry(new Integer(85));
-		System.out.println("85Á¡ÀÌ°Å³ª ¹Ù·Î À§ÀÇ Á¡¼ö: " + entry.getKey() + "-" + entry.getValue());
+		entry = scores.ceilingEntry(85);
+		System.out.println("85?????? ??? ???? ????: " + entry.getKey() + "-" + entry.getValue());
 		
 		while(scores.isEmpty()) {
 			entry = scores.pollFirstEntry();
-			System.out.println(entry.getKey() + "-" + entry.getValue() + "(³²Àº °´Ã¼ ¼ö: " + scores.size() + ")");
+			System.out.println(entry.getKey() + "-" + entry.getValue() + "(???? ??ü ??: " + scores.size() + ")");
 		}
 	}
 
